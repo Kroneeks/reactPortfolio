@@ -12,21 +12,19 @@ export const Banner = () => {
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
     }, delta);
 
-    return () => {
-      clearInterval(ticker);
-    };
+    return () => clearInterval(ticker);
   }, [text]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeliting
-      ? fullText.substring(0, text.string - 1)
-      : fullText.substring(0, text.string + 1);
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeliting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
     if (isDeliting) {
@@ -50,21 +48,21 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`I'm webcoded`}
+              {`I'm Sasha`}
               <span className="wrap">{text}</span>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.
               </p>
-              <button onClick={() => console.log("Connect")}>
-                Let's connect <ArrowRightCircle size={24} />
+              <button onClick={() => console.log("Connect")} type="button">
+                Let&apos;s connect <ArrowRightCircle size={24} />
               </button>
             </h1>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header image" />
+            <img src={headerImg} alt="Astronaut" />
           </Col>
         </Row>
       </Container>
