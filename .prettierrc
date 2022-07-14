@@ -5,5 +5,6 @@
   "editor.formatOnSave": true,
   "prettier.printWidth": 80,
   "prettier.trailingComma": "all",
-  "prettier.cssEnable": "css"
+  "prettier.cssEnable": "css",
+  "endOfLine": "auto"
 }
