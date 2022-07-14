@@ -76,6 +76,7 @@
     ],
     "react/button-has-type": "off",
     "react/jsx-curly-brace-presence": "off",
+    "react/jsx-boolean-value": "off",
     "no-restricted-syntax": [
       "off",
       "FunctionExpression",
