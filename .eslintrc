@@ -60,6 +60,8 @@
     "jsx-a11y/label-has-for": "off",
     "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
+    "arrow-body-style": "off",
+    "react/no-array-index-key": "off",
     "node/no-extraneous-require": [
       "error",
       {
@@ -77,6 +79,7 @@
     "react/button-has-type": "off",
     "react/jsx-curly-brace-presence": "off",
     "react/jsx-boolean-value": "off",
+    "react/prop-types": "off",
     "no-restricted-syntax": [
       "off",
       "FunctionExpression",
