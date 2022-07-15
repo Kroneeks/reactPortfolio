@@ -40,10 +40,10 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="projects" id="projects">
+    <section className="project" id="project">
       <Container>
         <Row>
-          <Col>
+          <Col size={12}>
             <h2>Projects</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -51,8 +51,12 @@ export const Projects = () => {
               text ever since the 1500s, when an unknown printer took a galley
               of type and scrambled it to make a type specimen book.
             </p>
-            <Tab.Container id="projects-tab" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab One</Nav.Link>
                 </Nav.Item>
@@ -67,11 +71,7 @@ export const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, index) => {
-                      return (
-                        <p>
-                          <ProjectCart key={index} {...project} />
-                        </p>
-                      );
+                      return <ProjectCart key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
