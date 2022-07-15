@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import { ProjectCart } from "./ProjectCart";
 
 export const Projects = () => {
   const projects = [
@@ -65,7 +66,11 @@ export const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, index) => {
-                      return <p>{project.title}</p>;
+                      return (
+                        <p>
+                          <ProjectCart key={index} {...projects} />
+                        </p>
+                      );
                     })}
                   </Row>
                 </Tab.Pane>
