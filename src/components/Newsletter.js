@@ -8,7 +8,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
     if (status === "success") clearFields();
   }, [status]);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     email.indexOf("@") > -1 &&
       onValidated({
