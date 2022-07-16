@@ -62,6 +62,7 @@
     "react/state-in-constructor": "off",
     "arrow-body-style": "off",
     "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
     "node/no-extraneous-require": [
       "error",
       {
@@ -79,6 +80,7 @@
     "react/button-has-type": "off",
     "react/jsx-curly-brace-presence": "off",
     "react/jsx-boolean-value": "off",
+    "react/self-closing-comp": "off",
     "react/prop-types": "off",
     "no-restricted-syntax": [
       "off",
