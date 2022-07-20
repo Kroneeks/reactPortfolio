@@ -48,7 +48,8 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`I'm Sasha`}
+              {`Hi I'm Sasha`}
+              <br />
               <span className="wrap">{text}</span>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
